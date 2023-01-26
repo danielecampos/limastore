@@ -1,14 +1,13 @@
-import logo from './logo-branca.png';
 import './App.css';
+import * as React from 'react';
+import TopBar from './components/topbar/TopBar.js'
+import NavBar from './components/navbar/NavBar.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Se você busca Elegância, Design Inovador e Qualidade este é o seu lugar! Loja online de artigos para decoração.</p>
-        <p>Em breve... Aguarde!</p>
-      </header>
+      <TopBar></TopBar>
+      <NavBar></NavBar>
     </div>
   );
 }

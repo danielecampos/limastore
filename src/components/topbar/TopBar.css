@@ -1,0 +1,14 @@
+.topBar {
+  background: white;
+  border-top: 8px solid #82CD27;
+}
+
+.logo img {
+  height: 90px;
+  margin: 5px 0;
+  pointer-events: none;
+}
+
+.accountOptions {
+  float: right;
+}
