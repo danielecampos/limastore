@@ -9,12 +9,12 @@
   pointer-events: none;
 }
 
-.rightItens {
+.rightItems {
   float: right;
   text-align: right;
   display: inline-flex;
 }
 
-.rightItens .dividerLine {
+.rightItems .dividerLine {
   margin: 0 40px;
 }

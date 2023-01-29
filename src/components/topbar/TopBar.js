@@ -24,7 +24,7 @@ function ResponsiveAppBar() {
             </Grid>
 
             <Grid item xs={4}>
-              <div className='rightItens'>
+              <div className='rightItems'>
                 <CartWidget />
                 <Divider className='dividerLine' orientation='vertical' flexItem />
                 <AccountOptions />

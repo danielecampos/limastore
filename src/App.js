@@ -2,7 +2,7 @@ import './App.css';
 import * as React from 'react';
 import TopBar from './components/topbar/TopBar.js'
 import NavBar from './components/navbar/NavBar.js'
-import ItemsListContainer from './components/itens/ItemListContainer.js';
+import ItemsListContainer from './components/items/ItemListContainer.js';
 
 function App() {
   return (
