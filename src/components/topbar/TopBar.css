@@ -9,6 +9,12 @@
   pointer-events: none;
 }
 
-.accountOptions {
+.rightItens {
   float: right;
+  text-align: right;
+  display: inline-flex;
+}
+
+.rightItens .dividerLine {
+  margin: 0 40px;
 }
