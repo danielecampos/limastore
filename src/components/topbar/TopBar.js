@@ -1,8 +1,8 @@
-// Custom componets
+// custom componets
 import Logo from './logo-branca.png';
 import './TopBar.css';
 
-// Libraries externas
+// external components
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';

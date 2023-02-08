@@ -1,7 +1,7 @@
-// Custom componets
+// custom componets
 import './CartWidget.css';
 
-// Libraries externas
+// external components
 import * as React from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Tooltip from '@mui/material/Tooltip';

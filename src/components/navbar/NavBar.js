@@ -1,8 +1,8 @@
-// Custom componets
+// custom componets
 import './Navbar.css';
 import { pages } from './constants.js';
 
-// Libraries externas
+// external components
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';

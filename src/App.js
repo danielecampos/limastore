@@ -6,10 +6,10 @@ import ItemsListContainer from './components/items/ItemListContainer.js';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <TopBar></TopBar>
       <NavBar></NavBar>
-      <ItemsListContainer greeting='Olá, seja bem-vindo!' />
+      <ItemsListContainer greeting='Olá, seja bem-vindo!'/>
     </div>
   );
 }
