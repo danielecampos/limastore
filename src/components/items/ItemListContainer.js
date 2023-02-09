@@ -1,45 +1,33 @@
 // custom componets
-import ItemCount from '../item_count/ItemCount';
+import ItemList from './ItemList.js';
+import './ItemListContainer.css'
 
 // external components
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Alert from '@mui/material/Alert';
-import IconButton from '@mui/material/IconButton';
-import Collapse from '@mui/material/Collapse';
-import CloseIcon from '@mui/icons-material/Close';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import { useState, useEffect } from 'react';
 
-function ItemsListContainer ( props ) {
-  const [open, setOpen] = React.useState(true);
+async function mock() {
+  await new Promise(resolve => setTimeout(resolve, 2000));
 
+  const response = await fetch('items.json');
+
+  return await response.json();
+}
+
+function ItemsListContainer () {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => setItems(await mock());
+    fetchData();
+  }, []);
+  
   return (
     <Container maxWidth='xl'>
-      <Grid container spacing={4}>
-        <Grid item xs={12}>
-          <Box sx={{ width: '100%' }}>
-            <Collapse in={open}>
-              <Alert
-                action={
-                  <IconButton aria-label='close' color='inherit' size='small' onClick={() => { setOpen(false); }}>
-                    <CloseIcon fontSize='inherit' />
-                  </IconButton>
-                }
-                sx={{ mb: 2 }}
-              >
-                { props.greeting }
-              </Alert>
-            </Collapse>
-          </Box>
-        </Grid>
-
-        <Grid item xs={8}>
-          <ItemCount />
-        </Grid>
-      </Grid>
+      <ItemList items={items} />
     </Container>
-  )
+  );
 }
 
 export default ItemsListContainer;

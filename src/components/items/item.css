@@ -1,0 +1,14 @@
+.MuiCardMedia-img {
+  margin: auto;
+  max-width: 160px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.price {
+  color: #82CD27;
+  font-size: 15px;
+  font-weight: 800;
+}

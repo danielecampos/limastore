@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Apple iPhone 14 Pro Max 128GB Roxo",
+    "price": "8.099,10",
+    "payment_method": "Em até 10x sem juros no cartão",
+    "stock": 6
+  },
+  {
+    "id": 2,
+    "title": "Iphone 14",
+    "price": "11.999,00",
+    "payment_method": "Em até 10x sem juros no cartão",
+    "stock": 32
+  }
+]
