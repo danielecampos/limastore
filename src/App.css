@@ -7,8 +7,17 @@
   }
 }
 
+.css-iajp3t-MuiButtonGroup-root .MuiButtonGroup-grouped {
+  color: #267a29;
+  border-color: #267a29;
+}
+
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 8px !important;
+}
+
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
   background-color: #b9b9b9;
 }
  
@@ -17,5 +26,6 @@
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: #535353;
+  background-color: #AB52C7;
+  border-radius: 20px;
 }

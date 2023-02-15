@@ -1,5 +1,18 @@
 .navBar {
   margin-bottom: 20px;
-  background-color: #82CD27;
+  background-color: #267a29;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.navBar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+} 
+
+.navBar a:hover {
+  background-color: #AB52C7;
 }

@@ -1,3 +1,7 @@
+// custom componets
+import './ItemCount.css'
+
+// external components
 import * as React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import Button from '@mui/material/Button';

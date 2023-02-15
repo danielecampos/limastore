@@ -15,17 +15,25 @@ async function mock() {
   return await response.json();
 }
 
-function ItemsListContainer () {
+function ItemsListContainer ({category}) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => setItems(await mock());
+    const fetchData = async () => {
+      const allItems = await mock(); 
+
+      const filteredItems = category === 'all' ? allItems : allItems.filter(item => item.category === category)
+
+      setItems(filteredItems);
+    }
     fetchData();
-  }, []);
-  
+  }, [category]);
+
+  const result = items.length > 0 ? <ItemList items={items} /> : <p>Nenhum produto encontrado.</p>;
+
   return (
     <Container maxWidth='xl'>
-      <ItemList items={items} />
+      {result}
     </Container>
   );
 }

@@ -1,6 +1,5 @@
 // custom componets
 import AvatarImage from './avatar.jpg';
-import './accountOptions.css';
 
 // external components
 import * as React from 'react';

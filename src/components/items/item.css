@@ -8,7 +8,11 @@
 }
 
 .price {
-  color: #82CD27;
+  color: #267a29;
   font-size: 15px;
   font-weight: 800;
+}
+
+.addToCart {
+  margin-top: 5px;
 }

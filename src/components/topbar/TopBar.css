@@ -1,12 +1,10 @@
 .topBar {
   background: white;
-  border-top: 8px solid #82CD27;
+  border-top: 4px solid #267a29;
 }
 
 .logo img {
-  height: 90px;
-  margin: 5px 0;
-  pointer-events: none;
+  margin: 11px 0;
 }
 
 .rightItems {
@@ -16,5 +14,13 @@
 }
 
 .rightItems .dividerLine {
-  margin: 0 40px;
+  margin: 0 20px;
+}
+
+.shoppingCart {
+  padding: 25px 0;
+}
+
+.accountOptions {
+  padding: 17px 0;
 }

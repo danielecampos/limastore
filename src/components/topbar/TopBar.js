@@ -1,5 +1,5 @@
 // custom componets
-import Logo from './logo-branca.png';
+import Logo from './limastore-logo.png';
 import './TopBar.css';
 
 // external components
@@ -10,6 +10,7 @@ import Grid from '@mui/material/Grid';
 import CartWidget from '../cart/CartWidget.js';
 import AccountOptions from '../account/accountOptions.js';
 import Divider from '@mui/material/Divider';
+import { Link } from 'react-router-dom';
 
 function ResponsiveAppBar() {
   return (
@@ -19,7 +20,9 @@ function ResponsiveAppBar() {
           <Grid container spacing={4}>
             <Grid item xs={8}>
               <Box className='logo'>
-                <img src={Logo} alt='Logo da loja LimaStore'/>
+                <Link to='/'>
+                  <img src={Logo} alt='Logo da loja LimaStore'/>
+                </Link>
               </Box>
             </Grid>
 
