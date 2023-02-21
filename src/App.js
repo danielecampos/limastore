@@ -5,23 +5,45 @@ import NavBar from './components/navbar/NavBar.js'
 import ItemsListContainer from './components/items/ItemListContainer.js';
 import ItemDetailContainer from './components/items/ItemDetailContainer.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './components/footer/Footer';
+import { cartContext } from 'react';
+import { useState } from 'react';
+import LoadingSpinner from "./components/loading/LoadingSpinner";
 
 function App() {
+  const cartContext = React.createContext();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleFetch = () => {
+    setIsLoading(true);
+    // setIsLoading(false);
+  };
+
   return (
     <BrowserRouter>
-      <TopBar></TopBar>
-      <NavBar></NavBar>
+      <cartContext.Provider value='s'>
+        <TopBar></TopBar>
+        <NavBar></NavBar>
 
-      <div className='App'>
-        <Routes>
-          <Route exact path='/' element={<ItemsListContainer category='all'/>} />
-          <Route exact path='/decoracao' element={<ItemsListContainer category='decoracao'/>} />
-          <Route exact path='/cozinha' element={<ItemsListContainer category='cozinha'/>} />
-          <Route exact path='/mesa-posta' element={<ItemsListContainer category='mesa-posta'/>} />
-          <Route exact path='/jardim' element={<ItemsListContainer category='jardim'/>} />
-          <Route exact path='/product/detail/:product_id' element={<ItemDetailContainer/>} />
-        </Routes>
-      </div>
+        <div className='App'>
+          <Routes>
+            <Route exact path='/' element={<ItemsListContainer category='all'/>} />
+            <Route exact path='/decoracao' element={<ItemsListContainer category='decoracao'/>} />
+            <Route exact path='/cozinha' element={<ItemsListContainer category='cozinha'/>} />
+            <Route exact path='/mesa-posta' element={<ItemsListContainer category='mesa-posta'/>} />
+            <Route exact path='/jardim' element={<ItemsListContainer category='jardim'/>} />
+            <Route exact path='/product/detail/:product_id' element={<ItemDetailContainer/>} />
+          </Routes>
+        </div>
+
+        <button onClick={handleFetch}>Fetch Users</button>
+
+        <button onClick={handleFetch} disabled={isLoading}>
+          Fetch Users
+        </button>
+
+        <Footer />
+      </cartContext.Provider>
     </BrowserRouter>
   );
 }

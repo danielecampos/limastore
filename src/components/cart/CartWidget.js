@@ -1,3 +1,6 @@
+// custom components
+import './cart.css'
+
 // external components
 import * as React from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -11,7 +14,7 @@ function CartWidget() {
     <Box className='shoppingCart'>
       <Tooltip title='Carrinho de compras'>
         <IconButton>
-          <Badge className='cart-count' badgeContent={1} color='primary'>
+          <Badge className='cart-count' badgeContent={1}>
             <ShoppingCartIcon />
           </Badge>
         </IconButton>

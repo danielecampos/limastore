@@ -1,11 +1,12 @@
 .navBar {
-  margin-bottom: 20px;
-  background-color: #267a29;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-top: 1px solid #267a29;
+  border-bottom: 1px solid #267a29;
+  margin-bottom: 50px;
+  color: #267a29;
 }
 
 .navBar a {
-  color: white;
+  color: #267a29;
   text-decoration: none;
   padding: 14px;
   margin: 0 10px;
@@ -14,5 +15,6 @@
 } 
 
 .navBar a:hover {
-  background-color: #AB52C7;
+  background-color: #267a29;
+  color: #FFF;
 }

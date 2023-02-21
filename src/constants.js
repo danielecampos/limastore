@@ -4,3 +4,9 @@ export const pages = [
   {category: 'mesa-posta', name: 'Mesa posta'},
   {category: 'jardim', name: 'Jardim'}
 ];
+
+export const secondary_pages = [
+  {name: 'Devolução gratuita'},
+  {name: 'Devolução em até 7 dias'},
+  {name: 'Nossas Lojas'}
+];

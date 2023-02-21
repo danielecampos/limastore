@@ -1,6 +1,7 @@
 // custom componets
 import Logo from './limastore-logo.png';
 import './TopBar.css';
+import { secondary_pages } from '../../constants.js';
 
 // external components
 import * as React from 'react';
@@ -18,12 +19,20 @@ function ResponsiveAppBar() {
       <Container maxWidth='xl'>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={4}>
-            <Grid item xs={8}>
+            <Grid item xs={4}>
               <Box className='logo'>
                 <Link to='/'>
                   <img src={Logo} alt='Logo da loja LimaStore'/>
                 </Link>
               </Box>
+            </Grid>
+
+            <Grid item xs={4}>
+              {
+                secondary_pages.map((page) => (
+                  <Link key={page.name} to={page.category}>{page.name}</Link>
+                ))
+              }
             </Grid>
 
             <Grid item xs={4}>
