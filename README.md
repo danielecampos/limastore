@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+![capa-readme](https://user-images.githubusercontent.com/16806183/220483999-640ff984-b3ff-445d-bcf3-3bb9fe525d0c.png)
+
+<h3>Loja virtual LIMA STORE</h3>
+
+Esse projeto foi desenvolvido utilizando o biblioteca React com o framework Material UI.
+
+:construction: Projeto em construção :construction:
+
+<h3>* Instruções de configurações</h3>
+
+<h3>Getting Started with Create React App</h3>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
