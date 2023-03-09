@@ -11,14 +11,17 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import Tooltip from '@mui/material/Tooltip';
 import OutlinedInput from '@mui/material/OutlinedInput';
+import { cartContext } from '../../context/cartContext.js';
+import { useContext } from 'react';
 
-function ItemCount({stock}) {
+function ItemCount({ item }) {
+  const context = useContext(cartContext)
   const [count, setCount] = useState(1);
   const addCountButton = useRef(null);
   const removeCountButton = useRef(null);
 
   useEffect(() => {
-    if (count >= stock) {
+    if (count >= item.stock) {
       addCountButton.current?.classList.add('Mui-disabled');
     } else if (count <= 0) {
       removeCountButton.current?.classList.add('Mui-disabled');
@@ -26,7 +29,7 @@ function ItemCount({stock}) {
       addCountButton.current?.classList.remove('Mui-disabled');
       removeCountButton.current?.classList.remove('Mui-disabled');
     }
-  }, [count, stock]);
+  }, [count, item.stock]);
 
   return (
     <Box>
@@ -43,11 +46,17 @@ function ItemCount({stock}) {
         />
 
         <Tooltip title='Adicionar'>
-          <Button ref={addCountButton} className='addItem' stock={stock} initial='1' onClick={() => setCount(count + 1)}>
+          <Button ref={addCountButton} className='addItem' stock={item.stock} initial='1' onClick={() => setCount(count + 1)}>
             <AddIcon />
           </Button>
         </Tooltip>
       </ButtonGroup>
+
+      <ButtonGroup className='addToCart' variant='outlined' aria-label='outlined button group'>
+        <Button onClick={ () => context.addItem(item, count) }>Adicionar ao carrinho</Button>
+        {/* <FavoriteItem /> */}
+      </ButtonGroup>
+
     </Box>
   );
 }

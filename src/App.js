@@ -6,12 +6,11 @@ import ItemsListContainer from './components/items/ItemListContainer.js';
 import ItemDetailContainer from './components/items/ItemDetailContainer.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/footer/Footer';
-import { cartContext } from 'react';
+import { CartProvider } from './context/cartContext';
 import { useState } from 'react';
-import LoadingSpinner from "./components/loading/LoadingSpinner";
+// import LoadingSpinner from "./components/loading/LoadingSpinner";
 
 function App() {
-  const cartContext = React.createContext();
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFetch = () => {
@@ -21,9 +20,9 @@ function App() {
 
   return (
     <BrowserRouter>
-      <cartContext.Provider value='s'>
-        <TopBar></TopBar>
-        <NavBar></NavBar>
+      <CartProvider>
+        <TopBar />
+        <NavBar />
 
         <div className='App'>
           <Routes>
@@ -43,7 +42,7 @@ function App() {
         </button>
 
         <Footer />
-      </cartContext.Provider>
+      </CartProvider>
     </BrowserRouter>
   );
 }

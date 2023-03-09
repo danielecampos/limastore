@@ -1,12 +1,12 @@
 // custom componets
-import FavoriteItem from './FavoriteItem.js';
+// import FavoriteItem from './FavoriteItem.js';
 
 // external components
 import Grid from '@mui/material/Grid';
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 
- function ItemDetail({ item }) {
+function ItemDetail({ item }) {
   return (
     <Grid container spacing={3}>
       <Grid item xs={3}>

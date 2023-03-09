@@ -10,7 +10,7 @@ import Grid from '@mui/material/Grid';
       {
         items.map((item) => (
           <Grid key={item.id} item xs={3}>
-            <Item {...item} />
+            <Item item={item} />
           </Grid>
         ))
       }
