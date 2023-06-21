@@ -1,0 +1,26 @@
+.topBar {
+  background: white;
+  border-top: 4px solid #267a29;
+}
+
+.logo img {
+  margin: 11px 0;
+}
+
+.rightItems {
+  float: right;
+  text-align: right;
+  display: inline-flex;
+}
+
+.rightItems .dividerLine {
+  margin: 0 20px;
+}
+
+.shoppingCart {
+  padding: 25px 0;
+}
+
+.accountOptions {
+  padding: 17px 0;
+}

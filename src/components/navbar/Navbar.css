@@ -1,0 +1,20 @@
+.navBar {
+  border-top: 1px solid #267a29;
+  border-bottom: 1px solid #267a29;
+  margin-bottom: 50px;
+  color: #267a29;
+}
+
+.navBar a {
+  color: #267a29;
+  text-decoration: none;
+  padding: 14px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+} 
+
+.navBar a:hover {
+  background-color: #267a29;
+  color: #FFF;
+}

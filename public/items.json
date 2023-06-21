@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Quadro Dandy I Verde 50x40cm Inspire",
+    "price": "199,00",
+    "image": "https://www.premierexclusive.com.br/_next/image?url=https%3A%2F%2Fwww.tramontina.com.br%2Fupload%2Ftramon%2Fimagens%2FFAR%2F65650280PNM001G.png&w=256&q=75",
+    "payment_method": "Em até 6x sem juros no cartão",
+    "category": "decoracao",
+    "stock": 6,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 2,
+    "title": "Conjunto de Panelas Antiaderente 5 Peças Preto Continental",
+    "price": "199,99",
+    "payment_method": "Em até 10x sem juros no cartão",
+    "image": "https://www.premierexclusive.com.br/_next/image?url=https%3A%2F%2Fwww.tramontina.com.br%2Fupload%2Ftramon%2Fimagens%2FFAR%2F65650280PNM001G.png&w=256&q=75",
+    "category": "cozinha",
+    "stock": 4,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 3,
+    "title": "Conjunto de Panelas Antiaderente 5 Peças Preto Continental",
+    "price": "199,99",
+    "payment_method": "Em até 10x sem juros no cartão",
+    "image": "https://www.premierexclusive.com.br/_next/image?url=https%3A%2F%2Fwww.tramontina.com.br%2Fupload%2Ftramon%2Fimagens%2FFAR%2F65650280PNM001G.png&w=256&q=75",
+    "category": "cozinha",
+    "stock": 2,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 4,
+    "title": "Conjunto de Panelas Antiaderente 5 Peças Preto Continental",
+    "price": "199,99",
+    "payment_method": "Em até 10x sem juros no cartão",
+    "image": "https://www.premierexclusive.com.br/_next/image?url=https%3A%2F%2Fwww.tramontina.com.br%2Fupload%2Ftramon%2Fimagens%2FFAR%2F65650280PNM001G.png&w=256&q=75",
+    "category": "cozinha",
+    "stock": 5,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 5,
+    "title": "Conjunto de Panelas Antiaderente 5 Peças Preto Continental",
+    "price": "199,99",
+    "payment_method": "Em até 10x sem juros no cartão",
+    "image": "https://www.premierexclusive.com.br/_next/image?url=https%3A%2F%2Fwww.tramontina.com.br%2Fupload%2Ftramon%2Fimagens%2FFAR%2F65650280PNM001G.png&w=256&q=75",
+    "category": "cozinha",
+    "stock": 7,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 6,
+    "title": "Guarda-Roupas",
+    "price": "799,00",
+    "payment_method": "Em até 10x sem juros no cartão",
+    "image": "https://www.premierexclusive.com.br/_next/image?url=https%3A%2F%2Fwww.tramontina.com.br%2Fupload%2Ftramon%2Fimagens%2FFAR%2F65650280PNM001G.png&w=256&q=75",
+    "category": "decoracao",
+    "stock": 12,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  }
+]
